@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>{{ user.username }} </h1>
+<hr/>
+{{ user.restaurantlocation_set.all }}
+{% for rest in user.restaurants % }
+{{ user.item_set.all }}
+{% endblock  %}

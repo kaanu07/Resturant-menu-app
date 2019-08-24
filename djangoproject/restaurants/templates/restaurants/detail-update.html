@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>{{form.instance.title}} <small>{{form.instance.category}}</small></h1>
+<p>yogya</p>
+<p>{{form.instance.location}} </p>
+<p>{{form.instance.timestamp}}</p>
+
+<hr/>
+<h3>Make chnages</h3>
+{% include 'snippets/form-snippet.html' with form=form %}
+
+{% endblock  %}
